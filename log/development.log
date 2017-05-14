@@ -919,3 +919,24 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered devise/shared/_links.html.erb (0.1ms)
   Rendered devise/registrations/new.html.erb within layouts/application (1.5ms)
 Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-14 16:45:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb within layouts/splash_layout (1.5ms)
+Completed 200 OK in 204ms (Views: 197.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-05-14 16:45:35 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 92ms (Views: 76.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-05-14 16:45:38 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
