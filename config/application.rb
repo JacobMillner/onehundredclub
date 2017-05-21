@@ -27,6 +27,8 @@ module Onehundredclub
     config.assets.precompile += %w( splash.js )
     config.assets.precompile += %w( signin.js )
 
+    config.assets.compile = true
+
     config.to_prepare do
       #Devise::SessionsController.layout "your_layout_name"
       Devise::RegistrationsController.layout false
