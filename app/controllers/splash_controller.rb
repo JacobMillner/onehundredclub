@@ -1,5 +1,5 @@
 class SplashController < ApplicationController
+  layout false
   def index
-    render :layout => 'splash_layout'
   end
 end

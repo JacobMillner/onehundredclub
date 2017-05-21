@@ -23,5 +23,17 @@ module Onehundredclub
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.assets.precompile += %w( splash.js )
+    config.assets.precompile += %w( signin.js )
+
+    config.to_prepare do
+      #Devise::SessionsController.layout "your_layout_name"
+      Devise::RegistrationsController.layout false
+      #Devise::ConfirmationsController.layout "your_layout_name"
+      #Devise::UnlocksController.layout "your_layout_name"
+      #Devise::PasswordsController.layout "your_layout_name"
+    end
+
   end
 end

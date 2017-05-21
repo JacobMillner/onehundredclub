@@ -1,83 +1,61 @@
-<div class="form">  
-      <h1>💯 Club</h1>      
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onehundredclub</title>
+  <%= javascript_include_tag 'signin' %>
+  <%= stylesheet_link_tag 'signin', media: 'all' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+<div class="cont_principal">
+<center><h1>💯 CLUB</h1></center>
+
+  <div class="cont_centrar">
+  <div class="cont_login">
+    <form action="">
+    <div class="cont_tabs_login">
+      <ul class='ul_tabs'>
+        <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
+        <span class="linea_bajo_nom"></span>
+        </li>
+        <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>
+        </li>
       </ul>
+      </div>
+  <div class="cont_text_inputs">
+      <input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />
+    
+    <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="emauil_us" />
+
+    <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />  
+   <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" />
+    
+    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>    
+<div class="terms_and_cons d_none">
+    <p><input type="checkbox" name="terms_and_cons" /> <label for="terms_and_cons">Accept  Terms and Conditions.</label></p>
+  
+    </div>
+      </div>
+<div class="cont_btn">
+     <button class="btn_sign">SIGN IN</button>
       
-      <div class="tab-content">
-        <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
-            </div>
-        
-            <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off"/>
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <button type="submit" class="button button-block"/>Get Started</button>
-          
-          </form>
-
-        </div>
-        
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
-          
-          </form>
-
-        </div>
-        
-      </div><!-- tab-content -->
+      </div>
       
-</div> <!-- /form -->
+    </form>
+    </div>
+    
+  </div>
+  
 
+</div>
 
 <h2>Sign up</h2>
 
@@ -108,3 +86,10 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+
+
+</body>
+</html>
+
+

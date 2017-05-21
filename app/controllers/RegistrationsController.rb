@@ -1,3 +1,3 @@
-class RegistrationsController < Devise::RegistrationsController
-  layout "signin_layout"
+class Users::RegistrationsController < Devise::RegistrationsController
+  layout "signin"
 end

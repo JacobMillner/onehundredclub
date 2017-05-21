@@ -12,11 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+//= stub signin
+//= stub splash
 
-$(document).ready( function() {
-  
+
+document.addEventListener("DOMContentLoaded", function(event) { 
   $('body').on("click", ".larg div h3", function(){
     if ($(this).children('span').hasClass('close')) {
       $(this).children('span').removeClass('close');
@@ -31,4 +32,3 @@ $(document).ready( function() {
     var title = $(this).data('title');
     $('.title').children('h2').html(title);
   });
-});
