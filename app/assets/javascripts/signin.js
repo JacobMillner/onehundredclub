@@ -22,7 +22,7 @@ for(var d = 0; d < inputs.length ; d++  ) {
  },100 );
  document.querySelector('.link_forgot_pass').style.opacity = "0";
    document.querySelector('.link_forgot_pass').style.top = "-5px";
-   document.querySelector('.btn_sign').innerHTML = "SIGN UP";    
+   document.querySelector('.btn_sign').value = "SIGN UP";    
   setTimeout(function(){
 
  document.querySelector('.terms_and_cons').style.opacity = "1";
@@ -102,7 +102,7 @@ switch(d) {
 }
   }
    },1500);
-   document.querySelector('.btn_sign').innerHTML = "SIGN IN";    
+   document.querySelector('.btn_sign').value = "SIGN IN";    
 }
 
 
