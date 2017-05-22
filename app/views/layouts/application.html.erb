@@ -1,52 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Onehundredclub</title>
-  <%= javascript_include_tag 'application' %>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= stylesheet_link_tag "main_page", :media => "all" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <% if notice %>
+  <head>
+    <title>Onehundredclub</title>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'metisMenu' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag    'metisMenu', media: 'all' %>
+    <!-- MetisMenu CSS -->
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
-  <% end %>
-  <% if alert %>
+    <% end %>
+    <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
+    <% end %>
 
-<span class="bckg"></span>
-<header>
-  <h1>💯 Club</h1>
-  <nav>
-    <ul>
-      <li>
-        <a href="javascript:void(0);" data-title="Projects">Projects</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Team">Team</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Diary">Diary</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Timeline">Timeline</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Settings">Settings</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Search">Search</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <%= yield %>
+    <div id="wrapper">
+
+      <%= render 'shared/_navbar' if user_signed_in? %>
+
+      <%= yield %>
+
     </div>
-  </article>
-</main>
-</body>
+  </body>
 </html>
-
-

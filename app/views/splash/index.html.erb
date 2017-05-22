@@ -1,40 +1,36 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="turbolinks-cache-control" content="no-cache">
-  <title>Onehundredclub</title>
-  <%= javascript_include_tag 'application'%>
-  <%= stylesheet_link_tag    'animate', media: 'all' %>
-  <%= stylesheet_link_tag    'splash', media: 'all' %>
+  <head>
+    <meta name="turbolinks-cache-control" content="no-cache">
+    <title>Onehundredclub</title>
+    <%= javascript_include_tag 'application'%>
+    <%= stylesheet_link_tag    'animate', media: 'all' %>
+    <%= stylesheet_link_tag    'splash', media: 'all' %>
 
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <% if notice %>
+    <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
-  <% end %>
-  <% if alert %>
+    <% end %>
+    <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
+    <% end %>
 
+    <div id="one" class="leftPeck animated pulse">
+      <H1>💯 Club</H1>
+      <p><%= link_to 'Sign Up', new_user_registration_path %>
+        <%= link_to 'Sign In', new_user_session_path %></p>
+    </div>
 
+    <div id="two" class="rightPeck animated pulse">
+      <h1>Rules</h1>
+      <p>Join the 💯 Club</p>
+      <p>Do Pushups</p>
+      <p>When Your Count Reaches 100, Post 💯 (and only ever post 💯 )</p>
+      <p>Repeat</p>
+    </div>
 
-<div id="one" class="leftPeck animated pulse">
-  <H1>💯  Club</H1>
-  <p><%= link_to 'Sign Up', new_user_registration_path %> <%= link_to 'Sign In', new_user_session_path %></p>
-</div>
-
-<div id="two" class="rightPeck animated pulse">
-  <h1>Rules</h1>
-  <p>Join the 💯  Club</p>
-  <p>Do Pushups</p>
-  <p>When Your Count Reaches 100, Post 💯 (and only ever post 💯 )</p>
-  <p>Repeat</p>
-</div>
-
-</body>
+  </body>
 </html>
-
-
