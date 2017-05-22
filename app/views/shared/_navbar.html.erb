@@ -228,9 +228,7 @@
         </li>
         <li class="divider"></li>
         <li>
-          <a href="login.html">
-            <%= icon ('fa fa-sign-out fa-fw') %>
-            Logout</a>
+            <%= icon ('fa fa-sign-out fa-fw') %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> 
         </li>
       </ul>
       <!-- /.dropdown-user -->
