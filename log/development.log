@@ -8570,3 +8570,231 @@ Processing by FeedController#index as HTML
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
   Rendered shared/_navbar.html.erb (0.3ms)
 Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 13:57:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (306.5ms)
+Completed 200 OK in 317ms (Views: 311.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 13:59:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (1619.2ms)
+Completed 200 OK in 1636ms (Views: 1625.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 13:59:42 -0400
+Processing by SplashController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `layout' for #<SplashController:0x007f53d7971148>):
+  app/controllers/splash_controller.rb:4:in `index'
+
+
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.9ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 13:59:52 -0400
+Processing by SplashController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ArgumentError ('false' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+  app/controllers/splash_controller.rb:4:in `index'
+
+
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jacob/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (17.9ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/metisMenu.self-0636db5252bf502068168e79ca74cf0f06aeb945337ab944f05dac838fc25be9.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/sb-admin-2.self-0cfc671920f487fc8b3d66eb5d37a35caa2b6d73f228580e193ccc04801f0a1a.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/signin.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/feed.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/splash.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/animate.self-9cb946a1e3a09da18a25dbaf31221973569ffbb774eef2402fcc13b29b7aecaa.css?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-05-22 13:59:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (28.4ms)
+Completed 200 OK in 29ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/sb-admin-2.self-0cfc671920f487fc8b3d66eb5d37a35caa2b6d73f228580e193ccc04801f0a1a.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/feed.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/metisMenu.self-0636db5252bf502068168e79ca74cf0f06aeb945337ab944f05dac838fc25be9.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/animate.self-9cb946a1e3a09da18a25dbaf31221973569ffbb774eef2402fcc13b29b7aecaa.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/splash.self-cb52e6992bbf969faac5317b899d6ff23fd944219234a75607d5d9ff7f276067.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/signin.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/splash.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:09 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-22 14:00:15 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:00:15 -0400
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (10.4ms)
+Completed 200 OK in 11ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-05-22 14:00:17 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-22 14:00:17 -0400
+Processing by SplashController#index as HTML
+  Rendered splash/index.html.erb (24.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed/index" for 127.0.0.1 at 2017-05-22 14:00:21 -0400
+Processing by FeedController#index as HTML
+  Rendered feed/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 1323ms (Views: 1322.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-cbaea83d073a0f84e0d43513c5c48813e0d458514583e7893c45e448b0716b7b.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:23 -0400
+
+
+Started GET "/feed/index" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+Processing by FeedController#index as HTML
+  Rendered feed/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/sb-admin-2.self-0cfc671920f487fc8b3d66eb5d37a35caa2b6d73f228580e193ccc04801f0a1a.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/feed.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/metisMenu.self-0636db5252bf502068168e79ca74cf0f06aeb945337ab944f05dac838fc25be9.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/signin.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/metisMenu.self-b46c5cb7651c5b3c8553a17a47bd99f10cb032ab797b0b7caeb42486520ac502.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/feed.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/splash.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/animate.self-9cb946a1e3a09da18a25dbaf31221973569ffbb774eef2402fcc13b29b7aecaa.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/sb-admin-2.self-b1675d12894767e97a0213a75ead6f4abb8f1058d69376f5df3d0c7f552d8a1d.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/signin.self-35db9098c02f66a642be1ecb506a34d945a9cacd656c9842674e8ade9fd00007.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/splash.self-cb52e6992bbf969faac5317b899d6ff23fd944219234a75607d5d9ff7f276067.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/application.self-cbaea83d073a0f84e0d43513c5c48813e0d458514583e7893c45e448b0716b7b.css?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-05-22 14:00:25 -0400
