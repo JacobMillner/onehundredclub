@@ -3,9 +3,9 @@
   <head>
     <title>Onehundredclub</title>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'metisMenu' %> 
+    <%= javascript_include_tag 'metisMenu' %>
     <%= javascript_include_tag 'sb-admin-2' %>
-    
+
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= stylesheet_link_tag    'sb-admin-2', media: 'all' %>
     <%= stylesheet_link_tag    'metisMenu', media: 'all' %>
@@ -23,8 +23,9 @@
     <div id="wrapper">
 
       <%= render 'shared/navbar' if user_signed_in? %>
-
-      <%= yield %>
+      <div id="page-wrapper">
+        <%= yield %>
+      </div>
 
     </div>
   </body>
