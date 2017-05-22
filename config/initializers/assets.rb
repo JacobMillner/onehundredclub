@@ -14,5 +14,5 @@ Rails.application.config.assets.precompile += %w( main_page.css )
 Rails.application.config.assets.precompile += %w( splash.css )
 Rails.application.config.assets.precompile += %w( animate.css )
 Rails.application.config.assets.precompile += %w( metisMenu.css )
+Rails.application.config.assets.precompile += %w( sb-admin-2.css )
 Rails.application.config.assets.precompile += %w( metisMenu.js )
-
