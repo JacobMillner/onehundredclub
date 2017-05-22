@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Onehundredclub</title> <%= javascript_include_tag 'signin' %> <%= stylesheet_link_tag 'signin', media: 'all' %>
+  <title>Onehundredclub</title> 
+<%= javascript_include_tag 'signin' %> 
+<%= stylesheet_link_tag 'signin', media: 'all' %>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
   <%= csrf_meta_tags %>
 </head>
@@ -13,92 +17,29 @@
   <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
-<div class="cont_principal">
+
+<%= devise_error_messages! %>
 <center><h1>💯 CLUB</h1></center>
 
-  <div class="cont_centrar">
-  <div class="cont_login">
-    <div class="cont_tabs_login">
-      <ul class='ul_tabs'>
-        <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
-        <span class="linea_bajo_nom"></span>
-        </li>
-        <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>
-        </li>
-      </ul>
-      </div>
-  <div class="cont_text_inputs">
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="testbox">
+  <h1>Registration</h1>
 
-    <%= f.text_field :username, autofocus: true, placeholder: "USERNAME", class: "input_form_sign" %>
 
-    <%= f.email_field :email, autofocus: true, placeholder: "EMAIL", class: "input_form_sign d_block active_inp" %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     
-    <%= f.password_field :password, autocomplete: "off", class: "input_form_sign d_block active_inp", placeholder: "PASSWORD" %>
-
-    <%= f.password_field :password_confirmation, autocomplete: "off", class: "input_form_sign", placeholder: "CONFIRM PASSWORD" %>
-
-
-    <!-- <input type="text" class="input_form_sign " placeholder="NAME" name="name_us" /> -->
-    
-    <!-- <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="emauil_us" /> -->
-
-    <!-- <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />  -->
-    <!-- <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" /> -->
-    
-    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>    
-<div class="terms_and_cons d_none">
-    <p><input type="checkbox" name="terms_and_cons" /> <label for="terms_and_cons">Accept  Terms and Conditions lol.</label></p>
-  
-    </div>
-  </div>
-<div class="cont_btn">
-  <!--  <button class="btn_sign">SIGN IN</button> -->
-     <%= f.submit "SIGN IN", class: "btn_sign" %>
-      
-      </div>
-      
-    </form>
-    </div>
-    
-  </div>
-<% end %> 
-  
-
+    <label id="icon" for="name"><i class="icon-envelope "></i></label>
+    <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
+    <label id="icon" for="name"><i class="icon-user"></i></label>
+    <%= f.text_field :username, autofocus: true, placeholder: "Username" %>
+    <label id="icon" for="name"><i class="icon-shield"></i></label>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+    <label id="icon" for="name"><i class="icon-shield"></i></label>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm Password" %>
+     <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+     <%= f.submit "Register" %>
+  <% end %>
 </div>
-
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
 <%= render "devise/shared/links" %>
-
-
 
 </body>
 </html>
