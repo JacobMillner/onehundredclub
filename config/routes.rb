@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'feed/index'
   resources :users
+  resources :posts, only: [:create, :destroy]
   root 'splash#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

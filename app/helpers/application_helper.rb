@@ -1,13 +1,12 @@
 module ApplicationHelper
 
-  def emojify(content)
-    h(content).to_str.gsub(/:([\w+-]+):/) do |match|
-      if emoji = Emoji.find_by_alias($1)
-        %(<img alt="#$1" src="#{image_path("emoji/#{emoji.image_filename}")}" style="vertical-align:middle" width="20" height="20" />)
-      else
-        match
-      end
-    end.html_safe if content.present?
+  def flash_class(level)
+    case level
+        when :notice then "alert alert-info"
+        when :success then "alert alert-success"
+        when :error then "alert alert-error"
+        when :alert then "alert alert-error"
+    end
   end
 
 end
