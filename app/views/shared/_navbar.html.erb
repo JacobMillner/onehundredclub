@@ -7,7 +7,9 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">💯 Club</a>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <i class="em em-100"></i> Club
+    <% end %>
   </div>
   <!-- /.navbar-header -->
 
@@ -217,9 +219,7 @@
       </a>
       <ul class="dropdown-menu dropdown-user">
         <li>
-          <a href="#">
-            <%= icon ('fa fa-user fa-fw') %>
-            User Profile</a>
+            <%= icon ('fa fa-user fa-fw') %> <%= link_to 'My Profile', user_path(:id => current_user.id) %>  
         </li>
         <li>
           <a href="#">

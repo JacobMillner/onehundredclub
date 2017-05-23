@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="turbolinks-cache-control" content="no-cache">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <title>Onehundredclub</title>
     <%= javascript_include_tag 'application'%>
     <%= stylesheet_link_tag    'animate', media: 'all' %>
@@ -19,16 +20,16 @@
     <% end %>
 
     <div id="one" class="leftPeck animated pulse">
-      <H1>💯 Club</H1>
+      <H1><i class="em em-100"></i>Club</H1>
       <p><%= link_to 'Sign Up', new_user_registration_path %>
         <%= link_to 'Sign In', new_user_session_path %></p>
     </div>
 
     <div id="two" class="rightPeck animated pulse">
       <h1>Rules</h1>
-      <p>Join the 💯 Club</p>
+      <p>Join the <i class="em em-100"></i> Club</p>
       <p>Do Pushups</p>
-      <p>When Your Count Reaches 100, Post 💯 (and only ever post 💯 )</p>
+      <p>When Your Count Reaches 100, Post <i class="em em-100"></i> (and only ever post <i class="em em-100"></i>)</p>
       <p>Repeat</p>
     </div>
 
