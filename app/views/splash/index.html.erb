@@ -11,7 +11,11 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-
+    <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+            <%= value %>
+      </div>
+    <% end %>  
     <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
     <% end %>
