@@ -219,7 +219,7 @@
       </a>
       <ul class="dropdown-menu dropdown-user">
         <li>
-            <%= icon ('fa fa-user fa-fw') %> <%= link_to 'My Profile', user_path(:id => current_user.id) %>  
+            <%= icon ('fa fa-user fa-fw') %> <%= link_to 'My Profile', user_path(:id => current_user.id) %>
         </li>
         <li>
           <a href="#">
@@ -228,7 +228,7 @@
         </li>
         <li class="divider"></li>
         <li>
-            <%= icon ('fa fa-sign-out fa-fw') %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> 
+            <%= icon ('fa fa-sign-out fa-fw') %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
         </li>
       </ul>
       <!-- /.dropdown-user -->
@@ -243,7 +243,7 @@
 
         <div class="profile-header-container">
           <div class="profile-header-img">
-            <img class="img-circle" src="http://i.imgur.com/3opVQdC.jpg"/>
+            <%= image_tag gravatar_url(current_user.email, 128), alt: "User Pic", class: "img-circle" %>
             <!-- badge -->
             <div class="rank-label-container">
               <span class="label label-default rank-label">100 points</span>

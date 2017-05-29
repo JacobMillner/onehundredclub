@@ -6,19 +6,19 @@
 <p class=" text-info"> <%= Time.now.strftime("%Y-%d-%m %H:%M:%S %Z") %> </p>
       </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-   
-   
+
+
           <div class="panel panel-info">
             <div class="panel-heading">
               <h3 class="panel-title"><%= @User.username %></h3>
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> 
+                <div class="col-md-3 col-lg-3 " align="center">
                 <div class="profile-header-img">
-                  <img alt="User Pic" src="http://i.imgur.com/3opVQdC.jpg" class="img-circle"> </div>
+                  <%= image_tag gravatar_url(@User.email, 128), alt: "User Pic", class: "img-circle" %></div>
                 </div>
-                <div class=" col-md-9 col-lg-9 "> 
+                <div class=" col-md-9 col-lg-9 ">
                   <table class="table table-user-information">
                     <tbody>
                       <tr>
@@ -33,11 +33,11 @@
                         <td>Points:</td>
                         <td>100</td>
                       </tr>
-                           
-                     
+
+
                     </tbody>
                   </table>
-                  
+
                   <a href="#" class="btn btn-primary">Follow</a>
                 </div>
               </div>
@@ -49,7 +49,7 @@
                             <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
                         </span>
                     </div>
-            
+
           </div>
         </div>
       </div>
