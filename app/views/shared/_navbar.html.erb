@@ -17,7 +17,7 @@
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
         <%= icon('envelope', class: 'fa-fw') %>
-        <%= icon ('caret-down') %>
+        <%= icon('caret-down') %>
       </a>
       <ul class="dropdown-menu dropdown-messages">
         <li>
@@ -59,7 +59,7 @@
         <li>
           <a class="text-center" href="#">
             <strong>Read All Messages</strong>
-            <%= icon ('fa fa-angle-right') %>
+            <%= icon('angle-right') %>
           </a>
         </li>
       </ul>
@@ -68,8 +68,8 @@
     <!-- /.dropdown -->
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        <%= icon ('fa fa-tasks fa-fw') %>
-        <%= icon ('fa fa-caret-down') %>
+        <%= icon('tasks', class: 'fa-fw') %>
+        <%= icon('caret-down') %>
       </a>
       <ul class="dropdown-menu dropdown-tasks">
         <li>
@@ -139,7 +139,7 @@
         <li>
           <a class="text-center" href="#">
             <strong>See All Tasks</strong>
-            <%= icon ('fa fa-angle-right') %>
+            <%= icon('angle-right') %>
           </a>
         </li>
       </ul>
@@ -148,14 +148,14 @@
     <!-- /.dropdown -->
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        <%= icon ('fa fa-bell fa-fw') %>
-        <%= icon ('fa fa-caret-down') %>
+        <%= icon('bell', class: 'fa-fw') %>
+        <%= icon('caret-down') %>
       </a>
       <ul class="dropdown-menu dropdown-alerts">
         <li>
           <a href="#">
             <div>
-              <%= icon ('fa fa-comment fa-fw') %>
+              <%= icon('comment', class: 'fa-fw') %>
               New Comment
               <span class="pull-right text-muted small">4 minutes ago</span>
             </div>
@@ -165,7 +165,7 @@
         <li>
           <a href="#">
             <div>
-              <%= icon ('fa fa-twitter fa-fw') %>
+              <%= icon('twitter', class: 'fa-fw') %>
               3 New Followers
               <span class="pull-right text-muted small">12 minutes ago</span>
             </div>
@@ -175,7 +175,7 @@
         <li>
           <a href="#">
             <div>
-              <%= icon ('fa fa-envelope fa-fw') %>
+              <%= icon('envelope', class: 'fa-fw') %>
               Message Sent
               <span class="pull-right text-muted small">4 minutes ago</span>
             </div>
@@ -185,7 +185,7 @@
         <li>
           <a href="#">
             <div>
-              <i class="fa fa-tasks fa-fw"></i>
+              <%= icon('tasks', class: 'fa-fw') %>
               New Task
               <span class="pull-right text-muted small">4 minutes ago</span>
             </div>
@@ -195,7 +195,7 @@
         <li>
           <a href="#">
             <div>
-              <%= icon ('fa fa-upload fa-fw') %>
+              <%= icon('upload', class: 'fa-fw') %>
               Server Rebooted
               <span class="pull-right text-muted small">4 minutes ago</span>
             </div>
@@ -205,7 +205,7 @@
         <li>
           <a class="text-center" href="#">
             <strong>See All Alerts</strong>
-            <%= icon ('fa fa-angle-right') %>
+            <%= icon('angle-right') %>
           </a>
         </li>
       </ul>
@@ -214,21 +214,21 @@
     <!-- /.dropdown -->
     <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        <%= icon ('fa fa-user fa-fw') %>
-        <%= icon ('fa fa-caret-down') %>
+        <%= icon('user', class: 'fa-fw') %>
+        <%= icon('caret-down') %>
       </a>
       <ul class="dropdown-menu dropdown-user">
         <li>
-            <%= icon ('fa fa-user fa-fw') %> <%= link_to 'My Profile', user_path(:id => current_user.id) %>
+            <%= icon('user', class: 'fa-fw') %> <%= link_to 'My Profile', user_path(:id => current_user.id) %>
         </li>
         <li>
           <a href="#">
-            <%= icon ('a fa-gear fa-fw') %>
+            <%= icon('gear', class: 'fa-fw') %>
             Settings</a>
         </li>
         <li class="divider"></li>
         <li>
-            <%= icon ('fa fa-sign-out fa-fw') %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <%= icon('sign-out', class: 'fa-fw') %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
         </li>
       </ul>
       <!-- /.dropdown-user -->
@@ -255,12 +255,12 @@
       </li>
       <li>
         <a href="index.html">
-          <%= icon ('fa fa-dashboard fa-fw') %>
+          <%= icon('dashboard', class: 'fa-fw') %>
           Dashboard</a>
       </li>
       <li>
         <a href="#">
-          <%= icon ('fa fa-bar-chart-o fa-fw') %>
+          <%= icon('bar-chart-o', class: 'fa-fw') %>
           Charts<span class="fa arrow"></span>
         </a>
         <ul class="nav nav-second-level">
@@ -275,17 +275,17 @@
       </li>
       <li>
         <a href="tables.html">
-          <%= icon ('fa fa-table fa-fw') %>
+          <%= icon('table', class: 'fa-fw') %>
           Tables</a>
       </li>
       <li>
         <a href="forms.html">
-          <%= icon ('fa fa-edit fa-fw') %>
+          <%= icon('edit', class: 'fa-fw') %>
           Forms</a>
       </li>
       <li>
         <a href="#">
-          <%= icon ('fa fa-wrench fa-fw') %>
+          <%= icon('wrench', class: 'fa-fw') %>
           UI Elements<span class="fa arrow"></span>
         </a>
         <ul class="nav nav-second-level">
@@ -313,7 +313,7 @@
       </li>
       <li>
         <a href="#">
-          <%= icon ('fa fa-sitemap fa-fw') %>
+          <%= icon('sitemap', class: 'fa-fw') %>
           Multi-Level Dropdown<span class="fa arrow"></span>
         </a>
         <ul class="nav nav-second-level">
@@ -348,7 +348,7 @@
       </li>
       <li>
         <a href="#">
-          <%= icon ('fa fa-files-o fa-fw') %>
+          <%= icon('files-o', class: 'fa-fw') %>
           Sample Pages<span class="fa arrow"></span>
         </a>
         <ul class="nav nav-second-level">
