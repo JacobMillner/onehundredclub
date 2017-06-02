@@ -48,3 +48,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+#dmh - use this platforms block for any gems required on windows only
+platforms :mswin, :mingw, :x64_mingw do
+  #dmh - gem needed for timezone stuff on windows
+  gem 'tzinfo-data'
+end
